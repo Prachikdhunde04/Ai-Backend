@@ -1,0 +1,68 @@
+Collecting fastapi==0.111.0 (from -r requirements.txt (line 1))
+  Using cached fastapi-0.111.0-py3-none-any.whl.metadata (25 kB)
+Collecting uvicorn==0.30.1 (from -r requirements.txt (line 2))
+  Using cached uvicorn-0.30.1-py3-none-any.whl.metadata (6.3 kB)
+Collecting sqlalchemy==2.0.30 (from -r requirements.txt (line 3))
+  Using cached SQLAlchemy-2.0.30-py3-none-any.whl.metadata (9.6 kB)
+Collecting passlib==1.7.4 (from passlib[bcrypt]==1.7.4->-r requirements.txt (line 4))
+  Using cached passlib-1.7.4-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting python-jose==3.3.0 (from python-jose[cryptography]==3.3.0->-r requirements.txt (line 5))
+  Using cached python_jose-3.3.0-py2.py3-none-any.whl.metadata (5.4 kB)
+Collecting python-multipart==0.0.9 (from -r requirements.txt (line 6))
+  Using cached python_multipart-0.0.9-py3-none-any.whl.metadata (2.5 kB)
+Collecting pydantic==2.7.2 (from -r requirements.txt (line 7))
+  Using cached pydantic-2.7.2-py3-none-any.whl.metadata (108 kB)
+Collecting pydantic-settings==2.3.1 (from -r requirements.txt (line 8))
+  Using cached pydantic_settings-2.3.1-py3-none-any.whl.metadata (3.3 kB)
+Collecting langchain==0.2.14 (from -r requirements.txt (line 9))
+  Using cached langchain-0.2.14-py3-none-any.whl.metadata (7.1 kB)
+Collecting langchain-community==0.2.12 (from -r requirements.txt (line 10))
+  Using cached langchain_community-0.2.12-py3-none-any.whl.metadata (2.7 kB)
+Collecting langchain-huggingface==0.0.3 (from -r requirements.txt (line 11))
+  Using cached langchain_huggingface-0.0.3-py3-none-any.whl.metadata (1.2 kB)
+Collecting chromadb==0.5.0 (from -r requirements.txt (line 12))
+  Using cached chromadb-0.5.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pypdf==4.2.0 (from -r requirements.txt (line 13))
+  Using cached pypdf-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting pandas==2.2.2 (from -r requirements.txt (line 14))
+  Using cached pandas-2.2.2.tar.gz (4.4 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  Preparing metadata (pyproject.toml) did not run successfully.
+  exit code: 1
+  
+  [12 lines of output]
+  + meson setup C:\Users\prach\AppData\Local\Temp\pip-install-lvnq2scp\pandas_fd06b8fe638845af8736f17ddad59577 C:\Users\prach\AppData\Local\Temp\pip-install-lvnq2scp\pandas_fd06b8fe638845af8736f17ddad59577\.mesonpy-myardfww\build -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --vsenv --native-file=C:\Users\prach\AppData\Local\Temp\pip-install-lvnq2scp\pandas_fd06b8fe638845af8736f17ddad59577\.mesonpy-myardfww\build\meson-python-native-file.ini
+  The Meson build system
+  Version: 1.2.1
+  Source dir: C:\Users\prach\AppData\Local\Temp\pip-install-lvnq2scp\pandas_fd06b8fe638845af8736f17ddad59577
+  Build dir: C:\Users\prach\AppData\Local\Temp\pip-install-lvnq2scp\pandas_fd06b8fe638845af8736f17ddad59577\.mesonpy-myardfww\build
+  Build type: native build
+  Project name: pandas
+  Project version: 2.2.2
+  
+  ..\..\meson.build:2:0: ERROR: Could not find C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe
+  
+  A full log can be found at C:\Users\prach\AppData\Local\Temp\pip-install-lvnq2scp\pandas_fd06b8fe638845af8736f17ddad59577\.mesonpy-myardfww\build\meson-logs\meson-log.txt
+  [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[notice] A new release of pip is available: 25.1.1 -> 26.0.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+error: metadata-generation-failed
+
+Encountered error while generating package metadata.
+
+See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
