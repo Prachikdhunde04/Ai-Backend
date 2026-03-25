@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from database import engine, Base
 import models
 from routers import auth, admin, documents, chat, reports
+import os
 
 # Create all database tables
 Base.metadata.create_all(bind=engine)
@@ -12,8 +13,8 @@ app = FastAPI(title="Secure Offline AI Chatbot Backend", version="1.0")
 
 # CORS setup
 origins = [
-    "http://localhost:3000",  # for local testing
-    "https://v0-ai-chatbot-pia-gules.vercel.app",  # your frontend URL
+    "http://localhost:3000",
+    "https://v0-ai-chatbot-pia-gules.vercel.app",
 ]
 
 app.add_middleware(
@@ -24,7 +25,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include all routers
+# Include routers
 app.include_router(auth.router)
 app.include_router(admin.router)
 app.include_router(documents.router)
