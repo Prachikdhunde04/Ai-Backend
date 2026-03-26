@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import engine, Base
@@ -13,7 +14,7 @@ app = FastAPI(title="Secure Offline AI Chatbot Backend", version="1.0")
 
 # CORS setup
 origins = [
-    "http://localhost:3000",
+    "http://localhost:8000",
     "https://v0-ai-chatbot-pia-gules.vercel.app",
 ]
 
@@ -36,3 +37,6 @@ app.include_router(reports.router)
 @app.get("/")
 def read_root():
     return {"message": "Secure AI Chatbot Backend is running."}
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
